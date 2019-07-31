@@ -5,8 +5,6 @@ Copyright (c) 2019 Zaskroniec Software Foundation.  All rights reserved.
 
 See the end of this file for further copyright and license information.
 
-.. contents::
-
 General Information
 -------------------
 
