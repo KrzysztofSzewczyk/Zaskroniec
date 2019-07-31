@@ -1,117 +1,124 @@
-# added for local development
-.buildaix/
-Modules/python.exp
-buildaix/
-installp/
-.gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Two-trick pony for OSX and other case insensitive file systems:
-# Ignore ./python binary on Unix but still look into ./Python/ directory.
-/python
-!/Python/
-*.cover
-*.iml
-*.o
-*.orig
-*.pyc
-*.pyd
-*.pyo
-*.rej
-*.swp
-*~
-*.gc??
-*.profclang?
-*.profraw
-*.dyn
-.gdb_history
-Doc/build/
-Doc/venv/
-Doc/.venv/
-Doc/env/
-Doc/.env/
-Include/pydtrace_probes.h
-Lib/distutils/command/*.pdb
-Lib/lib2to3/*.pickle
-Lib/test/data/*
-Makefile
-Makefile.pre
-Misc/python.pc
-Misc/python-config.sh
-Modules/Setup
-Modules/Setup.config
-Modules/Setup.local
-Modules/config.c
-Modules/ld_so_aix
-Programs/_freeze_importlib
-Programs/_freeze_importlib.exe
-Programs/_testembed
-Programs/_testembed.exe
-PC/python_nt*.h
-PC/pythonnt_rc*.h
-PC/*/*.exe
-PC/*/*.exp
-PC/*/*.lib
-PC/*/*.bsc
-PC/*/*.dll
-PC/*/*.pdb
-PC/*/*.user
-PC/*/*.ncb
-PC/*/*.suo
-PC/*/Win32-temp-*
-PC/*/x64-temp-*
-PC/*/amd64
-PCbuild/*.user
-PCbuild/*.suo
-PCbuild/*.*sdf
-PCbuild/*-pgi
-PCbuild/*-pgo
-PCbuild/*.VC.db
-PCbuild/*.VC.opendb
-PCbuild/.vs/
-PCbuild/amd64/
-PCbuild/obj/
-PCbuild/win32/
-.purify
-Parser/pgen
-Parser/pgen.exe
-__pycache__
-autom4te.cache
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
 build/
-buildno
-config.cache
-config.log
-config.status
-config.status.lineno
-core
-db_home
-.hg/
-.idea/
-ipch/
-libpython*.a
-libpython*.so*
-libpython*.dylib
-libpython*.dll
-platform
-pybuilddir.txt
-pyconfig.h
-python-config
-python-config.py
-python.bat
-python.exe
-python-gdb.py
-python.exe-gdb.py
-reflog.txt
-.svn/
-tags
-TAGS
-.coverage
-coverage/
-externals/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
 htmlcov/
-Tools/msi/obj
-Tools/ssl/amd64
-Tools/ssl/win32
-.vs/
-.vscode/
-gmon.out
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
 .mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
